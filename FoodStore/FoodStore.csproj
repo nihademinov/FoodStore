@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="badamli.jpg" />
+    <None Remove="coca-cola.jpg" />
+    <None Remove="doritos.jpg" />
+    <None Remove="fairy.jpg" />
+    <None Remove="kitkat.jpg" />
+    <None Remove="purina.jpg" />
+    <None Remove="red bull.jpg" />
+    <None Remove="sirab.png" />
+    <None Remove="sprite.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FontAwesome.WPF" Version="4.7.0.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="badamli.jpg" />
+    <Resource Include="coca-cola.jpg" />
+    <Resource Include="doritos.jpg" />
+    <Resource Include="fairy.jpg" />
+    <Resource Include="kitkat.jpg" />
+    <Resource Include="purina.jpg" />
+    <Resource Include="red bull.jpg" />
+    <Resource Include="sirab.png" />
+    <Resource Include="sprite.jpg" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,363 @@
+﻿<Window x:Class="FoodStore.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FoodStore"
+        xmlns:fa="http://schemas.fontawesome.io/icons/"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="460" Width="860" Background="FloralWhite">
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.8*" />
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Vertical" HorizontalAlignment ="Center" VerticalAlignment="Center" Background="LightGray" Height="444" Width="243">
+            <Button Grid.Column="0" Width="45" Height="30" Margin="3,10,190,3" Style="{StaticResource basketBtn}" Name="basketBtn" >
+                <StackPanel Orientation="Horizontal">
+                    <fa:ImageAwesome Style="{StaticResource icon}" Icon="ShoppingBasket"  Width="20" Height="20" />
+                </StackPanel>
+
+            </Button>
+            <Button Style="{StaticResource basketBtn}" Margin="3,2,70,0" Height="15" Width="166" Content="Menu" FontSize="10" />
+            <Button Style="{StaticResource basketBtn}" Margin="3,2,70,0" Height="15" Width="166" Content="About" FontSize="10"/>
+            <TextBlock Height="342"/>
+            <TextBlock Text="sience 2021 Ghost Store" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="9" Foreground="Gray"/>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1">
+            <Grid Height="435" Width="620">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+
+                <Grid Margin="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2.5*"/>
+                        <RowDefinition Height="1*"/>
+                        
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="1">
+                        <Border BorderThickness="1" BorderBrush="Black">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1.5*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.Row="0" Text="Coca-Cola" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold"/>
+                                <TextBlock Grid.Row="0" Text="1.10 AZN" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontWeight="Bold" FontSize="10"/>
+                                <Button Grid.Column="2" Grid.Row="1" Width="24" Height="20"  Style="{StaticResource basketBtn}" >
+                                    <fa:ImageAwesome Style="{StaticResource icon}" Icon="Plus"  Width="15" Height="15" />
+
+                                </Button>
+                            </Grid>
+                        </Border>
+                       
+                    </Grid>
+
+                    <Grid Grid.Row="0">
+                        <Label>
+                            <Image Stretch="Fill" Source="/coca-cola.jpg"/>
+                        </Label>
+                        
+                    </Grid>
+                </Grid>
+
+                <Grid Margin="5" Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2.5*"/>
+                        <RowDefinition Height="1*"/>
+
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="1">
+                        <Border BorderThickness="1" BorderBrush="Black">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1.5*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.Row="0" Text="Purina" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold"/>
+                                <TextBlock Grid.Row="0" Text="3.40 AZN" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontWeight="Bold" FontSize="10"/>
+                                <Button Grid.Column="2" Grid.Row="1" Width="24" Height="20"  Style="{StaticResource basketBtn}" >
+                                    <fa:ImageAwesome Style="{StaticResource icon}" Icon="Plus"  Width="15" Height="15" />
+
+                                </Button>
+                            </Grid>
+                        </Border>
+
+                    </Grid>
+
+                    <Grid Grid.Row="0">
+                        <Label>
+                            <Image Stretch="Fill" Source="/purina.jpg"/>
+                        </Label>
+
+                    </Grid>
+                </Grid>
+
+                <Grid Margin="5" Grid.Column="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2.5*"/>
+                        <RowDefinition Height="1*"/>
+
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="1">
+                        <Border BorderThickness="1" BorderBrush="Black">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1.5*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.Row="0" Text="Sirab" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold"/>
+                                <TextBlock Grid.Row="0" Text="0.75 AZN" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontWeight="Bold" FontSize="10"/>
+                                <Button Grid.Column="2" Grid.Row="1" Width="24" Height="20"  Style="{StaticResource basketBtn}" >
+                                    <fa:ImageAwesome Style="{StaticResource icon}" Icon="Plus"  Width="15" Height="15" />
+
+                                </Button>
+                            </Grid>
+                        </Border>
+
+                    </Grid>
+
+                    <Grid Grid.Row="0">
+                        <Label>
+                            <Image Stretch="Fill" Source="/sirab.png"/>
+                        </Label>
+
+                    </Grid>
+                </Grid>
+
+
+
+
+                <Grid Margin="5" Grid.Column="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2.5*"/>
+                        <RowDefinition Height="1*"/>
+
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="1">
+                        <Border BorderThickness="1" BorderBrush="Black">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1.5*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.Row="0" Text="Doritos" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold"/>
+                                <TextBlock Grid.Row="0" Text="2.35 AZN" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontWeight="Bold" FontSize="10"/>
+                                <Button Grid.Column="2" Grid.Row="1" Width="24" Height="20"  Style="{StaticResource basketBtn}" >
+                                    <fa:ImageAwesome Style="{StaticResource icon}" Icon="Plus"  Width="15" Height="15" />
+
+                                </Button>
+                            </Grid>
+                        </Border>
+
+                    </Grid>
+
+                    <Grid Grid.Row="0">
+                        <Label>
+                            <Image Stretch="Fill" Source="/doritos.jpg"/>
+                        </Label>
+
+                    </Grid>
+                </Grid>
+
+
+                <Grid Margin="5" Grid.Column="4">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2.5*"/>
+                        <RowDefinition Height="1*"/>
+
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="1">
+                        <Border BorderThickness="1" BorderBrush="Black">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1.5*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.Row="0" Text="Fairy" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold"/>
+                                <TextBlock Grid.Row="0" Text="2.15 AZN" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontWeight="Bold" FontSize="10"/>
+                                <Button Grid.Column="2" Grid.Row="1" Width="24" Height="20"  Style="{StaticResource basketBtn}" >
+                                    <fa:ImageAwesome Style="{StaticResource icon}" Icon="Plus"  Width="15" Height="15" />
+
+                                </Button>
+                            </Grid>
+                        </Border>
+
+                    </Grid>
+
+                    <Grid Grid.Row="0">
+                        <Label>
+                            <Image Stretch="Fill" Source="/fairy.jpg"/>
+                        </Label>
+
+                    </Grid>
+                </Grid>
+
+
+                <Grid Margin="5" Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2.5*"/>
+                        <RowDefinition Height="1*"/>
+
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="1">
+                        <Border BorderThickness="1" BorderBrush="Black">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1.5*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.Row="0" Text="Sprite" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold"/>
+                                <TextBlock Grid.Row="0" Text="1.20 AZN" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontWeight="Bold" FontSize="10"/>
+                                <Button Grid.Column="2" Grid.Row="1" Width="24" Height="20"  Style="{StaticResource basketBtn}" >
+                                    <fa:ImageAwesome Style="{StaticResource icon}" Icon="Plus"  Width="15" Height="15" />
+
+                                </Button>
+                            </Grid>
+                        </Border>
+
+                    </Grid>
+
+                    <Grid Grid.Row="0">
+                        <Label>
+                            <Image Stretch="Fill" Source="/sprite.jpg"/>
+                        </Label>
+
+                    </Grid>
+                </Grid>
+
+
+                <Grid Margin="5" Grid.Row="1" Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2.5*"/>
+                        <RowDefinition Height="1*"/>
+
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="1">
+                        <Border BorderThickness="1" BorderBrush="Black">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1.5*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.Row="0" Text="Redbull" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold"/>
+                                <TextBlock Grid.Row="0" Text="3.14 AZN" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontWeight="Bold" FontSize="10"/>
+                                <Button Grid.Column="2" Grid.Row="1" Width="24" Height="20"  Style="{StaticResource basketBtn}">
+                                    <fa:ImageAwesome Style="{StaticResource icon}" Icon="Plus"  Width="15" Height="15" />
+
+                                </Button>
+                            </Grid>
+                        </Border>
+
+                    </Grid>
+
+                    <Grid Grid.Row="0">
+                        <Label>
+                            <Image Stretch="Fill" Source="/red bull.jpg"/>
+                        </Label>
+
+                    </Grid>
+                </Grid>
+
+
+                <Grid Margin="5" Grid.Row="1" Grid.Column="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2.5*"/>
+                        <RowDefinition Height="1*"/>
+
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="1">
+                        <Border BorderThickness="1" BorderBrush="Black">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1.5*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.Row="0" Text="Badamli" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold"/>
+                                <TextBlock Grid.Row="0" Text="0.65 AZN" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontWeight="Bold" FontSize="10"/>
+                                <Button Grid.Column="2" Grid.Row="1" Width="24" Height="20"  Style="{StaticResource basketBtn}">
+                                    <fa:ImageAwesome Style="{StaticResource icon}" Icon="Plus"  Width="15" Height="15" />
+
+                                </Button>
+                            </Grid>
+                        </Border>
+
+                    </Grid>
+
+                    <Grid Grid.Row="0">
+                        <Label>
+                            <Image Stretch="Fill" Source="/badamli.jpg"/>
+                        </Label>
+
+                    </Grid>
+                </Grid>
+
+
+
+
+                <Grid Margin="5" Grid.Row="1" Grid.Column="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2.5*"/>
+                        <RowDefinition Height="1*"/>
+
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="1">
+                        <Border BorderThickness="1" BorderBrush="Black">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1.5*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.Row="0" Text="Kit-Kat" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold"/>
+                                <TextBlock Grid.Row="0" Text="2.10 AZN" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontWeight="Bold" FontSize="10"/>
+                                <Button Grid.Column="2" Grid.Row="1" Width="24" Height="20"  Style="{StaticResource basketBtn}">
+                                    <fa:ImageAwesome Style="{StaticResource icon}" Icon="Plus"  Width="15" Height="15" />
+
+                                </Button>
+                            </Grid>
+                        </Border>
+
+                    </Grid>
+
+                    <Grid Grid.Row="0">
+                        <Label>
+                            <Image Stretch="Fill" Source="/kitkat.jpg"/>
+                        </Label>
+
+                    </Grid>
+                </Grid>
+
+
+            </Grid>
+        </StackPanel>
+        
+        
+
+
+
+    </Grid>
+</Window>
